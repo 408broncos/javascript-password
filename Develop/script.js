@@ -18,10 +18,103 @@ number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //adding alphabet options
 alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k" ,"l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
+//for uppercase letters
+upper = [];
+
+//adding uppercase variable
+alphabet2 = alphabet.map(toUpper);
+
+//options in a global scope
+var options;
+
+var toUpper = function (X) {
+  return X.toUpperCase();
+};
+
+var get = document.querySelector("#generate");
+
+get.addEventListener("click", function () {
+  ps = writePassword();
+  document.getElementById("password").placeholder = ps;
+});
+
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+
+  //giving the user the first prompt
+  enter = parseInt(prompt("How many characters would you like to choose for your password? Choose between 8 and 128"));
+  
+  if (!enter) {
+    alert("Needs a value");
+  } else if (enter < 8 || enter > 128) {
+
+    enter = parseInt(prompt("You need to choose between 8 and 128"));
+
+  }else {
+    confirmCharacter = confirm("Will this have any special characters?");
+    confirmNumber = confirm("Will this have any numbers?");
+    confirmUppercase = confirm("Will this have any Uppercase letters?");
+    confirmLowercase = confirm("Will this have any Lowercase letters");
+  };
+
+  if (!confirmUppercase && !confirmLowercase && !confirmCharacter && !confirmNumber) {
+    options = alert("You must select an option.");
+  }
+
+  else if (confirmCharacter && confirmNumber && confirmLowercase && confirmUppercase) {
+    options = character.concat(number, alphabet, alphabet2);
+}
+  else if (confirmCharacter && confirmNumber &&confirmUppercase) {
+    options = character.concat(number, alphabet2);
+  }
+
+  else if (confirmCharacter && confirmNumber && confirmLowercase) {
+    options = character.concat(number, alphabet);
+  }
+
+  else if (confirmCharacter && confirmNumber) {
+    options = character.concat(number);
+  }
+
+  else if (confirmCharacter && confirmLowercase) {
+    options = character.concat(alphabet);
+  }
+
+  else if (confirmCharacter && confirmUppercase) {
+    options = character.concat(alphabet2);
+  }
+
+  else if (confirmNumber && confirmLowercase) {
+    options = number.concat(alphabet)
+  }
+
+  else if (confirmNumber && confirmUppercase) {
+    options = number.concat(alphabet2)
+  }
+  
+  else if (confirmUppercase && confirmLowercase) {
+    options = alphabet2.concat(alphabet)
+  }
+
+  else if (confirmNumber) {
+    options = number;
+  }
+
+  else if (confirmCharacter) {
+    options = character;
+  }
+
+  else if (confirmLowercase) {
+    options = alphabet;
+  }
+
+  else if (confirmUppercase) {
+    options = upper.concat (alphabet2)
+  };
+
+
+
+
 
   passwordText.value = password;
 
