@@ -1,4 +1,9 @@
 // Assignment code here
+var confirmCharacter;
+var confirmNumber;
+var confirmUppercase;
+var confirmLowercase;
+var enter;
 
 
 // Get references to the #generate element
