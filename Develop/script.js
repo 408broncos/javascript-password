@@ -44,12 +44,14 @@ function writePassword() {
   //giving the user the first prompt
   enter = parseInt(prompt("How many characters would you like to choose for your password? Choose between 8 and 128"));
   
+  //prompt value
   if (!enter) {
     alert("Needs a value");
   } else if (enter < 8 || enter > 128) {
 
     enter = parseInt(prompt("You need to choose between 8 and 128"));
 
+  //prompt questions
   }else {
     confirmCharacter = confirm("Will this have any special characters?");
     confirmNumber = confirm("Will this have any numbers?");
@@ -57,10 +59,12 @@ function writePassword() {
     confirmLowercase = confirm("Will this have any Lowercase letters");
   };
 
+  //if statement with all false variables 
   if (!confirmUppercase && !confirmLowercase && !confirmCharacter && !confirmNumber) {
     options = alert("You must select an option.");
   }
 
+  //else if statements with all 4,3,2,1 possibilities
   else if (confirmCharacter && confirmNumber && confirmLowercase && confirmUppercase) {
     options = character.concat(number, alphabet, alphabet2);
 }
@@ -112,8 +116,10 @@ function writePassword() {
     options = upper.concat (alphabet2)
   };
 
+  //variable for password
   var password = [];
 
+  //random password generator method
   for (var i = 0; i < enter; i++) {
     var pickOptions = options [Math.floor(Math.random() * options.length)];
     password.push(pickOptions);
@@ -123,7 +129,7 @@ function writePassword() {
   UserInput(ps);
   return ps;
   
-
+  //grabs the "id" element for password to generate random password
   function UserInput(ps) {
     document.getElementById("password").textContent = ps;
   }
