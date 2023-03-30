@@ -21,15 +21,15 @@ alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k" ,"l", "m", "n"
 //for uppercase letters
 upper = [];
 
-//adding uppercase variable
-alphabet2 = alphabet.map(toUpper);
-
 //options in a global scope
 var options;
 
 var toUpper = function (X) {
   return X.toUpperCase();
 };
+
+//adding uppercase variable
+alphabet2 = alphabet.map(toUpper);
 
 var get = document.querySelector("#generate");
 
@@ -112,13 +112,19 @@ function writePassword() {
     options = upper.concat (alphabet2)
   };
 
+  var password = [];
 
+  for (var i = 0; i < enter; i++) {
+    var pickOptions = options [Math.floor(Math.random() * options.length)];
+    password.push(pickOptions);
+  }
 
+  var ps = password.join("");
+  UserInput(ps);
+  return ps;
+  
 
-
-  passwordText.value = password;
-
+  function UserInput(ps) {
+    document.getElementById("password").textContent = ps;
+  }
 }
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
