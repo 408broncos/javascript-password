@@ -4,7 +4,12 @@
 
 | Technology Used         | Resource URL           | 
 | ------------- |:-------------:| 
-| Javascript    | [https://www.w3schools.com/tags/tag_footer.asp](https://www.w3schools.com/tags/tag_footer.asp) | [https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById] (https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) | [https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) | [https://stackoverflow.com/questions/17907455/how-to-get-numeric-value-from-a-prompt-box](https://stackoverflow.com/questions/17907455/how-to-get-numeric-value-from-a-prompt-box) | [https://www.w3schools.com/jsref/jsref_touppercase.asp](https://www.w3schools.com/jsref/jsref_touppercase.asp) | [https://www.londonacademyofit.co.uk/blog/fixing-code-bugs-javascript-checklist](https://www.londonacademyofit.co.uk/blog/fixing-code-bugs-javascript-checklist) |
+| Javascript    | [https://www.w3schools.com/tags/tag_footer.asp](https://www.w3schools.com/tags/tag_footer.asp) | 
+| Javascript    | [https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById] (https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) | 
+| Javascript    | [https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) 
+| Javascript    | [https://stackoverflow.com/questions/17907455/how-to-get-numeric-value-from-a-prompt-box](https://stackoverflow.com/questions/17907455/how-to-get-numeric-value-from-a-prompt-box) 
+| Javascript    | [https://www.w3schools.com/jsref/jsref_touppercase.asp](https://www.w3schools.com/jsref/jsref_touppercase.asp) 
+| Javascript    | [https://www.londonacademyofit.co.uk/blog/fixing-code-bugs-javascript-checklist](https://www.londonacademyofit.co.uk/blog/fixing-code-bugs-javascript-checklist) |
 
 
 ## Description 
