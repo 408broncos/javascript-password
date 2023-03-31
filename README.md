@@ -4,7 +4,7 @@
 
 | Technology Used         | Resource URL           | 
 | ------------- |:-------------:| 
-| Javascript    | [https://www.w3schools.com/tags/tag_footer.asp](https://www.w3schools.com/tags/tag_footer.asp) | 
+| Javascript    | [https://www.w3schools.com/tags/tag_footer.asp](https://www.w3schools.com/tags/tag_footer.asp)  
 | Javascript    | [https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById] (https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) 
 | Javascript    | [https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) 
 | Javascript    | [https://stackoverflow.com/questions/17907455/how-to-get-numeric-value-from-a-prompt-box](https://stackoverflow.com/questions/17907455/how-to-get-numeric-value-from-a-prompt-box) 
