@@ -14,9 +14,11 @@
 
 ## Description 
 
-[Visit the Deployed Site](https://408broncos.github.io/javascript-password/)
-
 For this project I was given a very new and difficult (in my opinion) language to write, Javascript. In this homework I was tasked to create a random password generator with: special characters, numbers, lower and uppercase letters. I was also tasked with prompting questions such as, "How many characters would you like to choose for your password? Choose between 8 and 128." Before I was able to prompt these questions I needed to give each character, number and letter values, which took a lot of typing. After all of the typing I could then work with forming the questions and give "if" and "else if" statements to give the code different possibilities to then create the random password with the math.random method.
+
+## Markdown
+
+
 
 ## Code Examples
 
