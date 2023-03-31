@@ -18,6 +18,7 @@ For this project I was given a very new and difficult (in my opinion) language t
 
 ## Markdown
 
+![javascript-passwordscreencastify](https://user-images.githubusercontent.com/126821868/228995866-67b25e43-1317-49a6-8b19-41e1ad269133.gif)
 
 
 ## Code Examples
